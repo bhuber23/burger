@@ -2,7 +2,7 @@ var express = require("express");
 var PORT = process.env.PORT || 3000;
 var app = express();
 var exphbs = require("express-handlebars");
-var routes = require("./controllers/burger_controller.js");
+var routes = require("./controllers/burgers_controller.js");
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));

@@ -14,15 +14,14 @@ router.get("/", function(req, res){
 });
 
 router.post("/api/burgers", function(req, res){
-    burger.insertOne("burger_name", req.body.burgerName, function(result){
+    burger.insertOne("burger_name", req.body.burger_name, function(result){
         res.status(200).end();
     });
 });
 
 router.put("/api/burgers/:id", function(req, res){
-    var condition = "id = " + req.params.id;
 
-    burger.updateOne({devoured: true}, condition, function(result){
+    burger.updateOne("devoured", true, "id", req.params.id, function(result){
         if (result.changedRows === 0){
             return res.status(404).end();
         }else{

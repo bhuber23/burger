@@ -1,0 +1,31 @@
+body {
+    background: rgb(247, 171, 31)!important;
+}
+
+#cat-burger {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 150px;
+    height: 200px;
+}
+
+#burger {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+}
