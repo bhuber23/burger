@@ -24,6 +24,14 @@ var orm = {
             if (err) throw err;
             cb(result);
         });
+    },
+
+    delete: function(table, conditionCol, conditionVal, cb){
+        var queryString = "DELETE FROM ?? WHERE ?? = ?";
+        connection.query(queryString, [table, conditionCol, conditionVal], function(err, result){
+            if (err) throw err;
+            cb(result);
+        });
     }
 }
 
