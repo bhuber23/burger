@@ -2,7 +2,8 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-center">
+          <p>Burgers to be Devoured</p>
             {{#each burgers}}
               {{#unless devoured}}
                 {{> burger-block devoured=false}}
@@ -10,7 +11,8 @@
             {{/each}}
         </div>
         <div class="col-md-4"></div>
-        <div class="col-md-4">
+        <div class="col-md-4 text-center">
+          <p>Throw it Away!</p>
           {{#each burgers}}
             {{#if devoured}}
               {{> burger-block devoured=true}}
