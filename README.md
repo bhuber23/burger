@@ -13,7 +13,7 @@ Three separate Handlebar files are used to render the HTML on the page. The inde
 
 
 ## Demo
-[Example Demo](public/assets/img/demo.gif)
+![Example Demo](public/assets/img/demo.gif)
 
 ## Technologies Used
 * jQuery
